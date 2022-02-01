@@ -1,0 +1,26 @@
+/* Estilos y Media Queries del Header con Bootstrap */
+
+.bg-menu {
+    background-color: darkkhaki;
+}
+
+.collapse {
+    margin-left: 3rem;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 467px) {
+    .collapse {
+        margin-left: 0;
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (min-width: 468px) and (max-width: 991px) {
+    .collapse {
+        margin-left: 0;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,24 @@
+/* Encabezados de las secciones */
+
+h1 {
+    margin: 50px;
+    padding: 10px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+
+    @media screen and (max-width: 467px) {
+        display: inline-block;
+        padding: 0;
+        margin: 2rem;
+        font-size: 1.5rem;
+    }
+
+    @media screen and (min-width: 468px) and (max-width: 991px) {
+        display: inline-block;
+        padding: 0;
+        margin: 2rem;
+        font-size: 1.75rem;
+    }
+}

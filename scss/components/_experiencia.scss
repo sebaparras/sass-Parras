@@ -1,0 +1,33 @@
+/* Sección Experiencia */
+
+.card {
+    width: 50%;
+    height: 95%;
+    margin-bottom: 2.5rem;
+    border-radius: 2rem;
+
+    @media screen and (max-width: 467px) {
+        width: 100%;
+    }
+
+    @media screen and (min-width: 468px) and (max-width: 991px) {
+        width: 75%;
+    }
+}
+
+.card-personalizada {
+    margin-left: 0;
+    margin-right: 0;
+
+    @media screen and (max-width: 467px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 468px) and (max-width: 991px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

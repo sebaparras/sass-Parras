@@ -1,0 +1,59 @@
+/* Sección servicios en index */
+
+section {
+    div {
+        img {
+            width: 70%;
+            height: 70%;
+
+            @media only screen and (max-width: 467px) {
+                width: 50%;
+            }
+
+            @media screen and (min-width: 468px) and (max-width: 991px) {
+                width: 40%;
+            }
+        }
+
+        h2 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: black;
+            font-size: 1.5rem;
+
+            @media only screen and (max-width: 467px) {
+                font-size: 1.25rem;
+                margin-bottom: 3rem;
+            }
+
+            @media screen and (min-width: 468px) and (max-width: 991px) {
+                font-size: 1.5rem;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}
+
+.seccion-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    .masaje-relajante {
+        grid-area: 1/1/2/2;
+    }
+    .masaje-piedras {
+        grid-area: 1/2/2/3;
+    }
+    .masaje-deportivo {
+        grid-area: 1/3/2/4;
+    }
+
+    @media screen and (max-width: 467px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media screen and (min-width: 468px) and (max-width: 991px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
