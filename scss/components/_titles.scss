@@ -1,24 +1,44 @@
 /* Encabezados de las secciones */
 
+@import '../base/maps';
+
 h1 {
     margin: 50px;
     padding: 10px;
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
-    color: black;
+    color: map-get($colores, color-encabezados);
 
     @media screen and (max-width: 467px) {
-        display: inline-block;
+        display: block;
         padding: 0;
         margin: 2rem;
         font-size: 1.5rem;
     }
 
     @media screen and (min-width: 468px) and (max-width: 991px) {
-        display: inline-block;
+        display: block;
         padding: 0;
         margin: 2rem;
         font-size: 1.75rem;
+    }
+}
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: map-get($colores, color-encabezados);
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+
+    @media only screen and (max-width: 467px) {
+        display: block;
+        font-size: 1.25rem;
+    }
+
+    @media screen and (min-width: 468px) and (max-width: 991px) {
+        display: block;
+        font-size: 1.5rem;
     }
 }

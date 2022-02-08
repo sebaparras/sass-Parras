@@ -1,0 +1,13 @@
+@mixin media-queries($flex, $column, $center) {
+    @media screen and (max-width: 467px) {
+        display: $flex;
+        flex-direction: $column;
+        align-items: $center;
+    }
+
+    @media screen and (min-width: 468px) and (max-width: 991px) {
+        display: $flex;
+        flex-direction: $column;
+        align-items: $center;
+    }
+}

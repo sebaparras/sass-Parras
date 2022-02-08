@@ -1,14 +1,30 @@
 /* Estilos y Media Queries del Header con Bootstrap */
 
+@import '../base/maps';
+
 .bg-menu {
-    background-color: darkkhaki;
+    background-color: map-get($colores, bg-color-standard);
+}
+
+.logo {
+    width: 250px;
+    margin-top: 1.25rem;
+
+    @media screen and (max-width: 467px) {
+        width: 200px;
+    }
 }
 
 .collapse {
     margin-left: 3rem;
     font-size: 1.25rem;
-    display: flex;
-    justify-content: center;
+    @extend %flex-center;
+}
+
+.nav-link {
+    &:hover {
+        color: map-get($colores, color-hover) !important;
+    }
 }
 
 @media screen and (max-width: 467px) {

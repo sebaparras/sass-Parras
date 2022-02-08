@@ -1,5 +1,7 @@
+@import '../base/maps';
+
 body {
     text-align: center;
-    background-color: khaki;
+    background-color: map-get($colores, bg-color-body);
     font-family: 'Source Sans Pro', sans-serif;
 }

@@ -1,10 +1,18 @@
 /* Sección servicios en index */
 
+@import '../base/maps';
+@import '../base/mixins';
+
 section {
     div {
         img {
             width: 70%;
             height: 70%;
+
+            &:hover {
+                transform: scale(1.085);
+                transition: all 1.5s ease;
+            }
 
             @media only screen and (max-width: 467px) {
                 width: 50%;
@@ -15,10 +23,11 @@ section {
             }
         }
 
-        h2 {
+        h3 {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            color: black;
+            color: map-get($colores, color-encabezados);
             font-size: 1.5rem;
+            margin-top: 0.25rem;
 
             @media only screen and (max-width: 467px) {
                 font-size: 1.25rem;
@@ -47,13 +56,5 @@ section {
         grid-area: 1/3/2/4;
     }
 
-    @media screen and (max-width: 467px) {
-        display: flex;
-        flex-direction: column;
-    }
-
-    @media screen and (min-width: 468px) and (max-width: 991px) {
-        display: flex;
-        flex-direction: column;
-    }
+    @include media-queries(flex, column, null);
 }

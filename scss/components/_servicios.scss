@@ -1,5 +1,7 @@
 /* Sección Servicios */
 
+@import '../base/mixins';
+
 .encabezado-servicios {
     h1 {
         @media screen and (max-width: 467px) {
@@ -35,13 +37,5 @@
         grid-area: 2 / 3 / 3 / 4;
     }
 
-    @media screen and (max-width: 467px) {
-        display: flex;
-        flex-direction: column;
-    }
-
-    @media screen and (min-width: 468px) and (max-width: 991px) {
-        display: flex;
-        flex-direction: column;
-    }
+    @include media-queries(flex, column, null);
 }
