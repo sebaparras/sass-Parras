@@ -6,13 +6,20 @@
     background-color: map-get($colores, bg-color-standard);
 }
 
+.logo-container {
+    margin-top: 22px;
+}
+
 .logo {
     width: 250px;
-    margin-top: 1.25rem;
 
     @media screen and (max-width: 467px) {
         width: 200px;
     }
+}
+
+.height-carousel {
+    height: 95vh;
 }
 
 .collapse {
