@@ -46,6 +46,7 @@ section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
+    text-align: center;
     .masaje-relajante {
         grid-area: 1/1/2/2;
     }

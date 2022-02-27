@@ -6,44 +6,25 @@
     background-color: map-get($colores, bg-color-standard);
 }
 
-.logo-container {
-    margin-top: 22px;
+.logo-navbar {
+    width: 60px;
+    border-radius: 50%;
 }
 
-.logo {
-    width: 250px;
+.height-carosuel {
+    height: 100vh;
+}
 
+.carousel {
     @media screen and (max-width: 467px) {
-        width: 200px;
+        display: none;
     }
-}
-
-.height-carousel {
-    height: 95vh;
-}
-
-.collapse {
-    margin-left: 3rem;
-    font-size: 1.25rem;
-    @extend %flex-center;
 }
 
 .nav-link {
     &:hover {
         color: map-get($colores, color-hover) !important;
-    }
-}
-
-@media screen and (max-width: 467px) {
-    .collapse {
-        margin-left: 0;
-        font-size: 0.75rem;
-    }
-}
-
-@media screen and (min-width: 468px) and (max-width: 991px) {
-    .collapse {
-        margin-left: 0;
-        font-size: 1rem;
+        transform: scale(1.22);
+        transition: all 0.5s ease-out;
     }
 }

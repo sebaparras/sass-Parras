@@ -2,11 +2,16 @@
 
 @import '../base/mixins';
 
+.encabezado-experiencia {
+    margin-top: 100px;
+}
+
 .card {
     width: 50%;
     height: 95%;
     margin-bottom: 2.5rem;
     border-radius: 2rem;
+    text-align: center;
 
     @media screen and (max-width: 467px) {
         width: 100%;
