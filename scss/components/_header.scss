@@ -11,13 +11,19 @@
     border-radius: 50%;
 }
 
-.height-carosuel {
-    height: 100vh;
+.carousel {
+    margin-top: 74px;
 }
 
-.carousel {
+.height-carosuel {
+    height: 80vh;
+
     @media screen and (max-width: 467px) {
-        display: none;
+        height: 50vh;
+    }
+
+    @media screen and (min-width: 468px) and (max-width: 991px) {
+        height: 65vh;
     }
 }
 

@@ -1,35 +1,28 @@
 /* Footer */
 
-@import '../base/maps';
-@import '../base/mixins';
-
-.container{
-	max-width: 1170px;
-	margin:auto;
-    font-family: 'Poppins', sans-serif;
-}
-
-.row{
-	display: flex;
-	flex-wrap: wrap;
-}
-
-ul{
-	list-style: none;
-}
-
-.footer{
+.footer {
 	background-color: #24262b;
     padding: 70px 0;
 	margin-top: 50px;
 }
 
-.footer-col{
+.container {
+	max-width: 1170px;
+	margin:auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer-col {
 	width: 25%;
 	padding: 0 15px;
 }
 
-.footer-col h4{
+.footer-col h2 {
 	font-size: 18px;
 	color: #ffffff;
 	text-transform: capitalize;
@@ -38,7 +31,7 @@ ul{
 	position: relative;
 }
 
-.footer-col h4::before{
+.footer-col h2::before {
 	content: '';
 	position: absolute;
 	left:0;
@@ -49,11 +42,15 @@ ul{
 	width: 35px;
 }
 
-.footer-col ul li:not(:last-child){
+ul {
+	list-style: none;
+}
+
+.footer-col ul li:not(:last-child) {
 	margin-bottom: 10px;
 }
 
-.footer-col ul li a{
+.footer-col ul li a {
 	font-size: 16px;
 	text-transform: capitalize;
 	color: #bbbbbb;
@@ -63,7 +60,7 @@ ul{
 	transition: all 0.3s ease;
 }
 
-.footer-col ul li a:hover{
+.footer-col ul li a:hover {
 	color: darkorange;
 	padding-left: 8px;
 }
@@ -75,7 +72,7 @@ ul{
 	font-weight: 300;
 }
 
-.footer-col .textos:not(:last-child){
+.footer-col .textos:not(:last-child) {
 	margin-bottom: 5px;
 }
 
@@ -97,7 +94,7 @@ ul{
 	font-weight: 300;
 }
 
-.footer-col .social-links a{
+.footer-col .social-links a {
 	display: inline-block;
 	height: 40px;
 	width: 40px;
@@ -110,23 +107,30 @@ ul{
 	transition: all 0.5s ease;
 }
 
-.footer-col .social-links a:hover{
+.footer-col .social-links a:hover {
 	color: #24262b;
 	background-color: darkorange;
 }
 
 
-/*responsive*/
-@media screen and (min-width: 468px) and (max-width: 991px){
+@media screen and (min-width: 468px) and (max-width: 991px) {
   .footer-col {
     width: 50%;
     margin-bottom: 30px;
+
+	.textos, .textos-contacto {
+		font-size: 12px;
+	}
 }
 }
 
-@media screen and (max-width: 467px){
+@media screen and (max-width: 467px) {
   .footer-col {
     width: 100%;
 	margin-bottom: 30px;
+
+	.textos, .textos-contacto {
+		font-size: 12px;
+	}
 }
 }

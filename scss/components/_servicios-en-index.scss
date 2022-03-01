@@ -22,23 +22,6 @@ section {
                 width: 40%;
             }
         }
-
-        h3 {
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            color: map-get($colores, color-encabezados);
-            font-size: 1.5rem;
-            margin-top: 0.25rem;
-
-            @media only screen and (max-width: 467px) {
-                font-size: 1.25rem;
-                margin-bottom: 3rem;
-            }
-
-            @media screen and (min-width: 468px) and (max-width: 991px) {
-                font-size: 1.5rem;
-                margin-bottom: 3rem;
-            }
-        }
     }
 }
 
