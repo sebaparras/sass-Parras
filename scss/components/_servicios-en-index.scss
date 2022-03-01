@@ -10,8 +10,8 @@ section {
             height: 70%;
 
             &:hover {
-                transform: scale(1.085);
-                transition: all 1.5s ease;
+                transform: scale(1.090);
+                transition: all 1.5s ease-out;
             }
 
             @media only screen and (max-width: 467px) {
