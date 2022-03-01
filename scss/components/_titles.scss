@@ -27,15 +27,13 @@ h1 {
 
 .subtitulo-index {
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 50px;
-    margin-bottom: 65px;
+    margin: 50px 0;
 }
 
 .descripcion {
     font-family: 'Times New Roman', Times, serif;
     color: map-get($colores, color-encabezados);
     font-size: 1.5rem;
-    margin-top: 0.5rem;
     margin-bottom: 3rem;
     text-align: center;
 

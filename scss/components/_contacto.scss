@@ -6,6 +6,15 @@
 
 .formulario {
     text-align: center;
+    width: 30%;
+
+    @media screen and (max-width: 467px) {
+        width: 70%;
+    }
+
+    @media screen and (min-width: 468px) and (max-width: 991px) {
+        width: 45%;
+    }
 }
 
 .form-control {

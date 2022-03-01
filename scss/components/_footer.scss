@@ -65,19 +65,19 @@ ul {
 	padding-left: 8px;
 }
 
-.textos {
-	font-size: 14px;
-	color: #bbbbbb;
-	display: block;
-	font-weight: 300;
-}
-
 .footer-col .textos:not(:last-child) {
 	margin-bottom: 5px;
 }
 
 .lista {
 	padding-left: 0;
+}
+
+.textos-calendario {
+	font-size: 14px;
+	color: #bbbbbb;
+	display: inline-block;
+	font-weight: 300;
 }
 
 .iconos-contacto {
@@ -89,8 +89,9 @@ ul {
 }
 
 .textos-contacto {
-	font-size: 14px;
+	font-size: 13px;
 	color: #bbbbbb;
+	display: inline-block;
 	font-weight: 300;
 }
 
@@ -118,7 +119,7 @@ ul {
     width: 50%;
     margin-bottom: 30px;
 
-	.textos, .textos-contacto {
+	.textos-contacto {
 		font-size: 12px;
 	}
 }
@@ -129,7 +130,7 @@ ul {
     width: 100%;
 	margin-bottom: 30px;
 
-	.textos, .textos-contacto {
+	.textos-contacto {
 		font-size: 12px;
 	}
 }
